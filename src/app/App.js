@@ -20,8 +20,10 @@ const router = createBrowserRouter( createRoutesFromElements(
     <Route path="about" element={<About/>} />
     <Route path="sign-up" element={<SignUp/>} />
     <Route path="articles" element={<Articles/>} />
+    <Route path="/articles/:title" element={<Article />} />
     <Route path="categories" element={<Categories/>} />
     <Route path="profile" element={<Profile/>} />
+    <Route path="/authors/:name" element={<Author />} />
   </Route>
 ))
 function App() {
